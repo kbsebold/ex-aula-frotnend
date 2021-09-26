@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(43, 22, 22);
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+
+ul  {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -50px 100px 0 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight:800;
+}
+
+ ul li:hover {
+     background-color: rgb(104, 54, 54);
+     border-radius: 5px;
+     width: 100px;
+     text-align: center;
+ }
+
+.banner {
+    background-image: url(https://www.scotsman.com/webimg/b25lY21zOjc0ODgxNGRhLTQwOTktNGJmZC04NWRlLTIwYjdkYzhlM2JkZDoyYzU5NzgxZS1lNzJiLTQ0ZTUtYWUwYy1hZTRhNDY0NDFiNDg=.jpg?width=2048&enable=upscale);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 80px); 
+    width: 100vw;  
+} 
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    padding: 40px;
+    background-color: rgb(43, 22, 22);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;  
+    color: yellow;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pictures {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 10px solid yellow;
+    border-radius: 10px;
+}
+
+.filhote {
+    background-image: url(https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/11181218/German-Shepherd-puppies.jpg);
+    background-size: contain;
+}
+
+.adulto {
+    background-image: url(https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg);
+    background-position: left 20px bottom 10px;
+    background-size: contain;
+}
+p {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+    
+    h1 {
+        font-size: 25px;
+        margin: 0 auto;
+    }
+    .banner {
+        width: 100vw;
+        height: 400px;
+    }
+    nav {
+        margin-top: 35px;
+    }
+    
+    li a {
+        font-size: 10px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section, {
+        width: 100vw;
+    }
+    .pictures {
+        width:300px;
+        height: 200px;
+    }
+    .adulto {
+        background-position: left 10px bottom 5px;
+    }
+}
